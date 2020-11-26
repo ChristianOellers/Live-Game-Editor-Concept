@@ -1,0 +1,45 @@
+html {
+  background: #fdfdfd;
+}
+
+.app {
+  width: 1000px;
+  margin: 25px auto 0;
+}
+
+.container {
+  display: grid;
+  grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.main {
+  width: 800px;
+  grid-column: 1 / 2;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 0 0 0 10px;
+  grid-column: 2 / 3;
+}
+
+.assets {
+  margin: 0 0 15px;
+}
+
+.assets img {
+  vertical-align: middle;
+}
+
+.toolbar {
+  width: 100%;
+}
+
+.toolbar li {
+  padding: 5px 10px;
+}
+
+footer {
+  width: 100%;
+  margin: 15px 0 30px;
+}

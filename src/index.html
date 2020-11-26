@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Live game editor – Concept</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/content.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+  </head>
+  <body>
+    <div class="app">
+      <section class="container">
+        <div class="main">
+          <h2>Scene</h2>
+          <canvas id="canvas" width="800" height="500"></canvas>
+        </div>
+
+        <aside class="sidebar">
+          <div class="assets">
+            <h2>Assets</h2>
+            <ul>
+              <li id="Asset-Enemy" title="Select enemy object"><img id="Asset-Img-Enemy" src="images/enemy.png" alt="Enemy" /> Enemy</li>
+              <li id="Asset-Player" title="Select player object">
+                <img id="Asset-Img-Player" src="images/player.png" alt="Player" /> Player
+              </li>
+            </ul>
+          </div>
+          <br />
+
+          <div class="toolbar">
+            <h2>Display/Debug tools</h2>
+            <p>Interaction</p>
+            <ul>
+              <li id="Tool-PlayStop" title="Toggle: Play/pause gameplay">Play/Pause »</li>
+            </ul>
+            <br />
+
+            <p>On/Off toggles</p>
+            <ul>
+              <li id="Tool-Pivot" title="Toggle: Render pivot (object center)">Pivot</li>
+              <li id="Tool-BoundingBox" title="Toggle: Render bounding box">Bounding box</li>
+              <li id="Tool-DirectionVector" title="Toggle: Render direction vector">Direction vector</li>
+              <li id="Tool-RotationVector" title="Toggle: Render rotation vector">Rotation vector</li>
+              <li id="Tool-Image" title="Toggle: Render images">Render images</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <footer class="footer">
+        <h2>How to use</h2>
+        <ol>
+          <li>Selectone of the assets from the menu</li>
+          <li>Click into the Canvas to add them to the scene</li>
+          <li>Play around with the tools (read title infos for details)</li>
+        </ol>
+      </footer>
+    </div>
+
+    <script src="js/lib/canvas-helper.js"></script>
+    <script src="js/object/enemy.js"></script>
+    <script src="js/object/player.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
